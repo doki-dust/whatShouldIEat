@@ -18,3 +18,5 @@ if len(listOfDishes[store]) == 0:
     print("吃你一见倾心的菜品。")
 else:
     print("吃：" + '\033[0;36m%s \033[0m' % random.choice(listOfDishes[store]), end="。")
+
+menu.close()
