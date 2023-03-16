@@ -12,11 +12,15 @@ def do_list(menu, list_of_dishes):
             cycle += 1
         else:
             dish += letter
+        list_of_dishes = list(list_of_dishes)
+
+    for i in list_of_dishes:
+        if i == ['']:
+            list_of_dishes.remove(i)
     return list_of_dishes
 
 
 def remove_store(count_of_store, list_of_dishes):
     for i in range(count_of_store):
         del (list_of_dishes[i][0])
-
     return list_of_dishes
